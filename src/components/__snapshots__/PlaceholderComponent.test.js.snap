@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlaceholderComponent renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <h1>
+    Boilerplate
+  </h1>
+  <a
+    href="https://en.wikipedia.org/wiki/Single-page_application"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    SPA
+  </a>
+  <br />
+  <small>
+    with
+  </small>
+  <p>
+    <a
+      href="https://reactjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      create-react-app
+    </a>
+    <br />
+    +
+    <br />
+    <a
+      href="https://redux.js.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      redux
+    </a>
+  </p>
+</div>
+`;
