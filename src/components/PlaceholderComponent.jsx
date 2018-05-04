@@ -1,24 +1,22 @@
 import React from 'react'
+import { Heading, Link, Text, Small } from 'rebass'
 
 const PlaceholderComponent = ({data}) => (
-  <div style={{textAlign: 'center'}}>
-    <h1>Boilerplate</h1>
-    <a href='https://en.wikipedia.org/wiki/Single-page_application' target='_blank' rel='noopener noreferrer'>SPA</a><br />
-    <small>with</small>
-    <p>
-      <a href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>create-react-app</a><br />
-      +<br />
-      <a href='https://redux.js.org' target='_blank' rel='noopener noreferrer'>redux</a>
-    </p>
+  <Text lineHeight='1.6' textAlign='center'>
+    <Heading is='h1'>Boilerplate</Heading>
+    <Link href='https://en.wikipedia.org/wiki/Single-page_application' target='_blank' rel='noopener noreferrer'>SPA</Link><br />
+    <Small>with</Small><br />
+    <Link href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>create-react-app</Link><br />
+    +<br />
+    <Link href='https://redux.js.org' target='_blank' rel='noopener noreferrer'>redux</Link>
     {data && (
-      <small style={{color: '#abc'}}>
-        <p>
-          &<br /> <a href='https://jsonplaceholder.typicode.com/'>JSONPlaceholder</a>
-        </p>
+      <Small color='#abc'>
+        <br />&<br />
+        <Link href='https://jsonplaceholder.typicode.com/' target='_blank' rel='noopener noreferrer'>JSONPlaceholder</Link>
         {data.map(item => <div key={item.id}>{item.name}</div>)}
-      </small>
+      </Small>
     )}
-  </div>
+  </Text>
 )
 
 export default PlaceholderComponent

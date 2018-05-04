@@ -2,16 +2,15 @@
 
 exports[`PlaceholderComponent renders correctly 1`] = `
 <div
-  style={
-    Object {
-      "textAlign": "center",
-    }
-  }
+  className="sc-gqjmRU PsSfe"
 >
-  <h1>
+  <h1
+    className="sc-VigVT fXkMTo"
+  >
     Boilerplate
   </h1>
   <a
+    className="sc-htoDjs gLCdRU"
     href="https://en.wikipedia.org/wiki/Single-page_application"
     rel="noopener noreferrer"
     target="_blank"
@@ -19,27 +18,30 @@ exports[`PlaceholderComponent renders correctly 1`] = `
     SPA
   </a>
   <br />
-  <small>
+  <small
+    className="sc-gqjmRU iEXEfP"
+  >
     with
   </small>
-  <p>
-    <a
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      create-react-app
-    </a>
-    <br />
-    +
-    <br />
-    <a
-      href="https://redux.js.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      redux
-    </a>
-  </p>
+  <br />
+  <a
+    className="sc-htoDjs gLCdRU"
+    href="https://reactjs.org"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    create-react-app
+  </a>
+  <br />
+  +
+  <br />
+  <a
+    className="sc-htoDjs gLCdRU"
+    href="https://redux.js.org"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    redux
+  </a>
 </div>
 `;
