@@ -1,23 +1,23 @@
 import reducer from '.'
-import { RECEIVE_PLACEHOLDER } from './placeholder'
+import { RECEIVE_TWEETS } from './twitter'
 
-describe('placeholder reducer', () => {
+describe('twitter reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
-      'placeholder': {isLoading: false}
+      'twitter': {isLoading: false}
     })
   })
 
-  it('should handle RECEIVE_PLACEHOLDER', () => {
+  it('should handle RECEIVE_TWEETS', () => {
     const FIXTURE = {foo: 'this is a placeholder for the action payload'}
 
     expect(
       reducer(undefined, {
-        type: RECEIVE_PLACEHOLDER,
+        type: RECEIVE_TWEETS,
         payload: FIXTURE
       })
     ).toEqual({
-      'placeholder': {isLoading: false, data: FIXTURE}
+      'twitter': {isLoading: false, data: FIXTURE}
     })
   })
 

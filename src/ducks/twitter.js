@@ -1,5 +1,5 @@
 /**
- * @module ducks/placeholder
+ * @module ducks/twitter
  *
  * This module follows
  * {@link https://github.com/erikras/ducks-modular-redux|ducks propsal}
@@ -9,9 +9,9 @@ import { handleError } from '../util'
 const fetch = window.fetch
 
 // ACTIONS
-export const REQUEST_PLACEHOLDER = 'polls/placeholder/REQUEST_PLACEHOLDER'
-export const RECEIVE_PLACEHOLDER = 'polls/placeholder/RECEIVE_PLACEHOLDER'
-export const FAILURE_PLACEHOLDER = 'polls/placeholder/FAILURE_PLACEHOLDER'
+export const REQUEST_TWEETS = 'fogon/twitter/REQUEST_TWEETS'
+export const RECEIVE_TWEETS = 'fogon/twitter/RECEIVE_TWEETS'
+export const FAILURE_TWEETS = 'fogon/twitter/FAILURE_TWEETS'
 
 // REDUCER
 
@@ -31,14 +31,14 @@ const initialState = {
  */
 export default function reducer (state = initialState, action = {}) {
   switch (action.type) {
-    case REQUEST_PLACEHOLDER:
+    case REQUEST_TWEETS:
       return Object.assign({}, state, {isLoading: true})
-    case RECEIVE_PLACEHOLDER:
+    case RECEIVE_TWEETS:
       return Object.assign({}, state, {
         isLoading: false,
         data: action.payload
       })
-    case FAILURE_PLACEHOLDER:
+    case FAILURE_TWEETS:
       return Object.assign({}, state, {
         error: action.error && action.payload,
         isLoading: false
@@ -50,15 +50,15 @@ export default function reducer (state = initialState, action = {}) {
 
 // ACTION CREATORS
 
-export const requestPlaceholder = () => ({type: REQUEST_PLACEHOLDER})
+export const requestTweets = () => ({type: REQUEST_TWEETS})
 
-export const receivePlaceholder = (payload) => ({
-  type: RECEIVE_PLACEHOLDER,
+export const receiveTweets = (payload) => ({
+  type: RECEIVE_TWEETS,
   payload
 })
 
-export const failurePlaceholder = (error) => ({
-  type: FAILURE_PLACEHOLDER,
+export const failureTweets = (error) => ({
+  type: FAILURE_TWEETS,
   payload: error,
   error: true
 })
@@ -66,13 +66,13 @@ export const failurePlaceholder = (error) => ({
 // SIDE-EFFECTS
 
 // side-effect: HTTP request
-export const fetchPlaceholder = () => {
+export const fetchTweets = () => {
   return (dispatch) => {
-    dispatch(requestPlaceholder())
-    return fetch('https://jsonplaceholder.typicode.com/users')
+    dispatch(requestTweets())
+    return fetch('https://wt-2465218525656d593816c223371899c2-0.sandbox.auth0-extend.com/twitterProxy/1.1/statuses/user_timeline.json?screen_name=sevillaciudad')
       .then(handleError)
-      .then(payload => dispatch(receivePlaceholder(payload)))
-      .catch(error => dispatch(failurePlaceholder(error)))
+      .then(payload => dispatch(receiveTweets(payload)))
+      .catch(error => dispatch(failureTweets(error)))
   }
 }
 

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import placeholder from './placeholder'
+import twitter from './twitter'
 
 export default combineReducers({
-  placeholder
+  twitter
 })
