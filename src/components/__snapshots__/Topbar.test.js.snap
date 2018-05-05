@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Topbar renders correctly 1`] = `
+<div
+  className="sc-Rmtcm kOUKrJ sc-bwzfXH pjOvZ"
+>
+  <img
+    className="sc-iAyFgw jLmdZJ"
+    src="logo.svg"
+  />
+  <h2
+    className="sc-VigVT cBIDWq"
+  >
+    fogón
+  </h2>
+</div>
+`;
