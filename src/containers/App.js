@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchPlaceholder } from '../ducks/placeholder'
-import { PlaceholderComponent } from '../components'
+import { fetchTweets } from '../ducks/twitter'
+import { Timeline, Topbar } from '../components'
 
 export class AppContainer extends Component {
   // Lifecycle methods
 
   componentDidMount () {
-    this.props.fetchPlaceholder()
+    this.props.fetchTweets()
   }
 
   // render
@@ -15,14 +15,19 @@ export class AppContainer extends Component {
   render () {
     const { isLoading, data } = this.props
     if (isLoading) return <div>Loading...</div>
-    return <PlaceholderComponent data={data} />
+    return (
+      <React.Fragment>
+        <Topbar />
+        <Timeline posts={data} />
+      </React.Fragment>
+    )
   }
 }
 
-const mapStateToProps = state => state.placeholder
+const mapStateToProps = state => state.twitter
 
 const mapDispatchToProps = dispatch => ({
-  fetchPlaceholder: () => dispatch(fetchPlaceholder())
+  fetchTweets: () => dispatch(fetchTweets())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppContainer)

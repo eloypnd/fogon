@@ -1,47 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AppContainer renders correctly 1`] = `
-<div
-  className="sc-gqjmRU PsSfe"
+Array [
+  <div
+    className="sc-Rmtcm kOUKrJ sc-bwzfXH pjOvZ"
 >
-  <h1
-    className="sc-VigVT fXkMTo"
-  >
-    Boilerplate
-  </h1>
-  <a
-    className="sc-htoDjs gLCdRU"
-    href="https://en.wikipedia.org/wiki/Single-page_application"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    SPA
-  </a>
-  <br />
-  <small
-    className="sc-gqjmRU iEXEfP"
-  >
-    with
-  </small>
-  <br />
-  <a
-  className="sc-htoDjs gLCdRU"
-  href="https://reactjs.org"
-  rel="noopener noreferrer"
-  target="_blank"
->
-  create-react-app
-</a>
-<br />
-+
-<br />
-<a
-  className="sc-htoDjs gLCdRU"
-  href="https://redux.js.org"
-  rel="noopener noreferrer"
-  target="_blank"
->
-  redux
-</a>
-</div>
+    <img
+        className="sc-iAyFgw jLmdZJ"
+        src="logo.svg"
+    />
+    <h2
+        className="sc-VigVT cBIDWq"
+    >
+        fogón
+    </h2>
+</div>,
+  <div
+    className="sc-eHgmQL xPffg sc-bdVaJa iHZvIS"
+/>,
+]
 `;

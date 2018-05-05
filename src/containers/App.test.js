@@ -4,7 +4,7 @@ import { AppContainer } from './App'
 
 it('AppContainer renders correctly', () => {
   const tree = renderer
-    .create(<AppContainer fetchPlaceholder={() => {}} />)
+    .create(<AppContainer fetchTweets={() => {}} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
