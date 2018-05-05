@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PlaceholderContainer renders correctly 1`] = `
+exports[`AppContainer renders correctly 1`] = `
 <div
   className="sc-gqjmRU PsSfe"
 >
@@ -25,23 +25,23 @@ exports[`PlaceholderContainer renders correctly 1`] = `
   </small>
   <br />
   <a
-    className="sc-htoDjs gLCdRU"
-    href="https://reactjs.org"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    create-react-app
-  </a>
-  <br />
-  +
-  <br />
-  <a
-    className="sc-htoDjs gLCdRU"
-    href="https://redux.js.org"
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    redux
-  </a>
+  className="sc-htoDjs gLCdRU"
+  href="https://reactjs.org"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  create-react-app
+</a>
+<br />
++
+<br />
+<a
+  className="sc-htoDjs gLCdRU"
+  href="https://redux.js.org"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  redux
+</a>
 </div>
 `;
