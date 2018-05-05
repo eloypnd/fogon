@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimelineItem renders correctly 1`] = `
+<div
+  className="sc-bdVaJa dbOKEe"
+>
+  <div
+    className="sc-jAaTju hdyfev"
+  >
+    <div
+      className="sc-gqjmRU kKsieB"
+    />
+  </div>
+</div>
+`;
