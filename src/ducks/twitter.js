@@ -20,7 +20,8 @@ export const FAILURE_TWEETS = 'fogon/twitter/FAILURE_TWEETS'
  * @type {Object}
  */
 const initialState = {
-  isLoading: false
+  isLoading: false,
+  data: []
 }
 
 /**

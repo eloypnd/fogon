@@ -4,7 +4,7 @@ import { RECEIVE_TWEETS } from './twitter'
 describe('twitter reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
-      'twitter': {isLoading: false}
+      'twitter': {isLoading: false, data: []}
     })
   })
 
