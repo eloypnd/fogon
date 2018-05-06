@@ -4,7 +4,7 @@ import Timeline from './Timeline'
 
 it('Timeline renders correctly', () => {
   const tree = renderer
-    .create(<Timeline />)
+    .create(<Timeline posts={[]} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

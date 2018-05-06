@@ -14,8 +14,8 @@ export class AppContainer extends Component {
 
   render () {
     const { isLoading, data } = this.props
-    if (isLoading) return <div>Loading...</div>
-    return <Timeline posts={data} />
+    // if (isLoading) return <div>Loading...</div>
+    return <Timeline posts={data} isLoading={isLoading} />
   }
 }
 
