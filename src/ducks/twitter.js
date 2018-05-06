@@ -69,7 +69,7 @@ export const failureTweets = (error) => ({
 export const fetchTweets = () => {
   return (dispatch) => {
     dispatch(requestTweets())
-    return fetch('https://wt-2465218525656d593816c223371899c2-0.sandbox.auth0-extend.com/twitterProxy/1.1/statuses/user_timeline.json?screen_name=sevillaciudad')
+    return fetch('https://wt-2465218525656d593816c223371899c2-0.sandbox.auth0-extend.com/twitterProxy/1.1/statuses/user_timeline.json?screen_name=sevillaciudad&tweet_mode=extended&count=200')
       .then(handleError)
       .then(payload => dispatch(receiveTweets(payload)))
       .catch(error => dispatch(failureTweets(error)))
