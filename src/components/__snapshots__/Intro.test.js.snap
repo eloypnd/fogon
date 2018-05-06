@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bjkHRI"
+>
+  <h2
+    className="sc-VigVT hYUSXL"
+  >
+    fogón
+  </h2>
+  <div
+    className="sc-gqjmRU jcYQKF"
+  >
+    This is a playground where I practice different tools, techniques and architectures involve in UI development.
+  </div>
+  <div
+    className="sc-gqjmRU kKsieB"
+  >
+    Currently is using 
+    <a
+      href="https://reactjs.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      React
+    </a>
+     + 
+    <a
+      href="https://redux.js.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Redux
+    </a>
+    . Styling is done with 
+    <a
+      href="https://jxnblk.com/rebass/props"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Rebass
+    </a>
+    .
+  </div>
+</div>
+`;

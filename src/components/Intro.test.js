@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Topbar from './Topbar'
+import Intro from './Intro'
 
-it('Topbar renders correctly', () => {
+it('Intro renders correctly', () => {
   const tree = renderer
-    .create(<Topbar />)
+    .create(<Intro />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

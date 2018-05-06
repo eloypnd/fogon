@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Flex } from 'rebass'
-import { TimelineItem } from '.'
+import { Intro, TimelineItem } from '.'
 
 const Timeline = ({posts}) => (
   <Container>
+    <Intro />
     {posts && (
       <Flex flexWrap='wrap'>
         {posts.map(

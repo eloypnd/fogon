@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchTweets } from '../ducks/twitter'
-import { Timeline, Topbar } from '../components'
+import { Timeline } from '../components'
 
 export class AppContainer extends Component {
   // Lifecycle methods
@@ -15,12 +15,7 @@ export class AppContainer extends Component {
   render () {
     const { isLoading, data } = this.props
     if (isLoading) return <div>Loading...</div>
-    return (
-      <React.Fragment>
-        <Topbar />
-        <Timeline posts={data} />
-      </React.Fragment>
-    )
+    return <Timeline posts={data} />
   }
 }
 
