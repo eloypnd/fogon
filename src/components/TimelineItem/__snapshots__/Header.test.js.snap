@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="sc-bwzfXH pjOvZ"
+>
+  <div
+    className="sc-bdVaJa fkURjY"
+  >
+    <img
+      className="sc-iAyFgw bmhsqM"
+      src={undefined}
+    />
+  </div>
+  <div
+    className="sc-bdVaJa iHZvIS"
+  >
+    <div
+      className="sc-fjdhpX bkzArl sc-gqjmRU lemRYh"
+    />
+    <a
+      className="sc-htoDjs gLCdRU"
+      href="https://twitter.com/undefined"
+      target="_blank"
+    >
+      @
+    </a>
+  </div>
+</div>
+`;
