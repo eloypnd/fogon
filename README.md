@@ -2,6 +2,8 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[fogon.netlify.com](https://fogon.netlify.com)
+
 This project was bootstrapped with [Create React App](./docs/create-react-app.md).
 
 ## Usage

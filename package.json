@@ -1,5 +1,7 @@
 {
   "name": "fogon",
+  "description": "UI development playground",
+  "homepage": "https://fogon.netlify.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

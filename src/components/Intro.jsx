@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Text } from 'rebass'
+import { Box, Heading, Link, Text } from 'rebass'
 
 const Intro = () => (
   <Box px={2} py={4}>
@@ -8,9 +8,12 @@ const Intro = () => (
       This is a playground where I practice different tools,
       techniques and architectures involve in UI development.
     </Text>
+    <Text mb={2}>
+      Currently is using <Link href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>React</Link> + <Link href='https://redux.js.org' target='_blank' rel='noopener noreferrer'>Redux</Link>.
+      Styling is done with <Link href='https://jxnblk.com/rebass/props' target='_blank' rel='noopener noreferrer'>Rebass</Link>.
+    </Text>
     <Text>
-      Currently is using <a href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>React</a> + <a href='https://redux.js.org' target='_blank' rel='noopener noreferrer'>Redux</a>.
-      Styling is done with <a href='https://jxnblk.com/rebass/props' target='_blank' rel='noopener noreferrer'>Rebass</a>.
+      You can find the source code on <Link href='https://github.com/eloypnd/fogon' _target='_blank' rel='noopener noreferrer'>Github</Link>.
     </Text>
   </Box>
 )

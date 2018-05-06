@@ -22,6 +22,7 @@ exports[`Timeline renders correctly 1`] = `
     >
       Currently is using 
       <a
+        className="sc-htoDjs gLCdRU"
         href="https://reactjs.org"
         rel="noopener noreferrer"
         target="_blank"
@@ -30,6 +31,7 @@ exports[`Timeline renders correctly 1`] = `
       </a>
        + 
       <a
+        className="sc-htoDjs gLCdRU"
         href="https://redux.js.org"
         rel="noopener noreferrer"
         target="_blank"
@@ -38,11 +40,26 @@ exports[`Timeline renders correctly 1`] = `
       </a>
       . Styling is done with 
       <a
+        className="sc-htoDjs gLCdRU"
         href="https://jxnblk.com/rebass/props"
         rel="noopener noreferrer"
         target="_blank"
       >
         Rebass
+      </a>
+      .
+    </div>
+    <div
+      className="sc-gqjmRU kKsieB"
+    >
+      You can find the source code on 
+      <a
+        _target="_blank"
+        className="sc-htoDjs gLCdRU"
+        href="https://github.com/eloypnd/fogon"
+        rel="noopener noreferrer"
+      >
+        Github
       </a>
       .
     </div>
